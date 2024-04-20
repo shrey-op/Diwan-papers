@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam Papers Download</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        </style>
+    <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
         /* Global styles */
@@ -58,6 +61,7 @@
             list-style: none;
             margin: 0;
             padding: 0;
+            
         }
 
         .logo-img {
@@ -67,97 +71,18 @@
         .nav-links li {
             margin-left: 60px;
         }
-
+        
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-size: 16px;
-            transition: color 0.3s ease;
+            font-size: 26px;
+            font-family: "Dosis", sans-serif;
+            
         }
 
-        .nav-links a:hover {
-            color: #ddd;
-        }
+        
 
-        /* Dropdown menu styles */
-        .dropdown {
-            position: relative;
-        }
-
-        .dropdown-content {
-            display: flex;
-            position: absolute;
-            background-color: #ea2828;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-            transition: 0.3s ease;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Optional: Add Font Awesome caret icon for dropdown indicator */
-        .dropbtn i {
-            margin-left: 5px;
-            font-size: 12px;
-        }
-
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 17px;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 20px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        .dropdown-content {
-            /* display: none; */
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            /* display: block; */
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+        
 
         /* Select styles */
         select {
@@ -324,37 +249,35 @@
                 background-positon-x: 0px;
             }
         }
-        .mhead2{
-            display: flex;
+
+
+        .mainpara {
+            font-size: 34px;
+            font-family: "Josefin Sans", sans-serif;
         }
-        .mhead{
-            display: flex;
-            width: 20%;
+
+        .subpara {
+            font-size: 23px;
+            font-family: "Josefin Sans", sans-serif;
         }
-        .mhead img{
-            width: 40vh;
-            height: 30vh;
-            margin-left: 20px;
+
+        .thirdpara {
+            font-size: 19px;
+            font-family: "Josefin Sans", sans-serif;
         }
-        .mhead1{
-            margin-left: 200px;
-            margin-top: 50px;
-        }
-        .mainpara{
-            font-size: 40px;
-        }
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
     </style>
 </head>
 
 <body>
     <header class="mhead2">
-        <div class="mhead">
-            <img src="Images/Screenshot 2024-04-19 203549.png" alt="">
-        </div>
         <div class="mhead1">
             <p class="mainpara">Welcome to Your Exam Papers Hub</p>
-            <p>Access exam papers for your study needs!</p>
-            <p>By : Shrey and Preyansh</p>
+            <p class="subpara">Access exam papers for your study needs!</p>
+            <p class="thirdpara">By : Shrey and Preyansh</p>
         </div>
     </header>
     <nav class="navbar">
@@ -363,13 +286,7 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Materials</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Material 1</a></li>
-                    <li><a href="#">Material 2</a></li>
-                    <li><a href="#">Material 3</a></li>
-                </ul>
+            <li class="dropdown"><a href="#" class="dropbtn">Materials</a>
             </li>
             <li><a href="#">About us</a></li>
         </ul>
