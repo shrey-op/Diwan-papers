@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam Papers Download</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-        </style>
-    <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
         /* Global styles */
+        * {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
@@ -33,6 +37,9 @@
         header p {
             font-size: 18px;
         }
+        .made-by{
+            font-size: 20px;
+        }
 
         /* Basic navbar styles */
         .navbar {
@@ -42,14 +49,12 @@
             background-color: #29262d;
             padding: 10px 20px;
             color: white;
-            height: 100px;
         }
 
         /* Logo styling */
         .nav-logo {
             font-size: 20px;
             font-weight: bold;
-            
         }
 
         .nav-logo a {
@@ -63,28 +68,107 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            
         }
-        .nav-links li a:hover{
-            color: #ccc;
-        }
+
         .logo-img {
-            width: 140px;
-            height: 170px;
+            width: 180px;
         }
 
         .nav-links li {
             margin-left: 60px;
         }
-        
+
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-size: 26px;
-            font-family: "Dosis", sans-serif;
-            font-weight: 500;
-            
+            font-size: 16px;
+            transition: color 0.3s ease;
         }
+
+        .nav-links a:hover {
+            color: #ddd;
+        }
+
+        /* Dropdown menu styles */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: flex;
+            position: absolute;
+            background-color: #ea2828;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            transition: 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Optional: Add Font Awesome caret icon for dropdown indicator */
+        .dropbtn i {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            /* display: none; */
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            /* display: block; */
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
         /* Select styles */
         select {
             padding: 10px;
@@ -250,48 +334,30 @@
                 background-positon-x: 0px;
             }
         }
-
-
-        .mainpara {
-            font-size: 34px;
-            font-family: "Josefin Sans", sans-serif;
-        }
-
-        .subpara {
-            font-size: 23px;
-            font-family: "Josefin Sans", sans-serif;
-        }
-
-        .thirdpara {
-            font-size: 19px;
-            font-family: "Josefin Sans", sans-serif;
-        }
-    </style>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
     </style>
 </head>
 
 <body>
-    <header class="mhead2">
-        <div class="mhead1">
-            <p class="mainpara">Welcome to Your Exam Papers Hub</p>
-            <p class="subpara">Access exam papers for your study needs!</p>
-            <p class="thirdpara">By : Shrey and Preyansh</p>
-        </div>
+    <header>
+        <h1>Welcome to Your Exam Papers Hub</h1>
+        <p>Access exam papers for your study needs!</p>
+       <p class="made-by">Made by - Shrey and Preyansh</p>
     </header>
     <nav class="navbar">
         <div class="nav-logo">
-            <a href="index.html"><img src="Images/logo-no-background.png" alt="logo" class="logo-img"></a>
+            <a href="index.html"><img src="logo.jpg" alt="" class="logo-img"></a>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li class="dropdown"><a href="#" class="dropbtn">Materials</a>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Materials</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Material 1</a></li>
+                    <li><a href="#">Material 2</a></li>
+                    <li><a href="#">Material 3</a></li>
+                </ul>
             </li>
             <li><a href="#">About us</a></li>
-            <li><a href="tel:919898850575">Helpline No : +919898850575</a></li>
-            <li><a href="">Email :- shreyamin2109@gmail.com</a></li>
         </ul>
     </nav>
     <main>
@@ -360,7 +426,7 @@
             <li class="menu__item"><a class="menu__link" href="#">About</a></li>
 
         </ul>
-        <p>&copy;2021 Shrey and Preyansh | All Rights Reserved</p>
+        <p>&copy;2021 shreypreyansh | All Rights Reserved</p>
     </footer>
     <script>
         // Sample data representing exam papers
@@ -382,10 +448,6 @@
                 "Hindi": [
                     { name: "9th First test Hindi Paper 2024 ", paperLink: "9thpaperhindi.pdf", solutionLink: "hindi_sol24.pdf" },
                     { name: "9th Second test Hindi Paper 2024", paperLink: "9thpaperhindi.pdf", solutionLink: "hindi_sol24.pdf" },
-                ],
-                "Computer": [
-                    { name: "9th First test Computer Paper 2024 ", paperLink: "9thpaperComputer.pdf", solutionLink: "hindi_sol24.pdf" },
-                    { name: "9th Second test Computer Paper 2024", paperLink: "9thpaperComputer2.pdf", solutionLink: "hindi_sol24.pdf" },
                 ]
 
             },
