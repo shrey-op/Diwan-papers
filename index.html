@@ -38,7 +38,7 @@
             font-size: 18px;
         }
         .made-by{
-            font-size: 20px;
+            font-size: 10px;
         }
 
         /* Basic navbar styles */
@@ -49,6 +49,7 @@
             background-color: #29262d;
             padding: 10px 20px;
             color: white;
+            height: 100px;
         }
 
         /* Logo styling */
@@ -71,7 +72,8 @@
         }
 
         .logo-img {
-            width: 180px;
+            width: 120px;
+            height: 150px;
         }
 
         .nav-links li {
@@ -80,93 +82,15 @@
 
         .nav-links a {
             color: white;
+            font-family: "Rajdhani", sans-serif;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 27px;
             transition: color 0.3s ease;
+            font-weight: 500;
         }
 
         .nav-links a:hover {
-            color: #ddd;
-        }
-
-        /* Dropdown menu styles */
-        .dropdown {
-            position: relative;
-        }
-
-        .dropdown-content {
-            display: flex;
-            position: absolute;
-            background-color: #ea2828;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-            transition: 0.3s ease;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Optional: Add Font Awesome caret icon for dropdown indicator */
-        .dropbtn i {
-            margin-left: 5px;
-            font-size: 12px;
-        }
-
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 17px;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 20px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        .dropdown-content {
-            /* display: none; */
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            /* display: block; */
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
+            color: #aaa9a9;
         }
 
         /* Select styles */
@@ -334,31 +258,41 @@
                 background-positon-x: 0px;
             }
         }
+       
+        .mainhead h1{
+            font-family: "Dosis", sans-serif;
+            font-size: 36px;
+        }
+        
+        .made-by{
+            font-size: 16px;
+        }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to Your Exam Papers Hub</h1>
-        <p>Access exam papers for your study needs!</p>
+    <header class="mainhead">
+        <h1 >Welcome to Your Exam Papers Hub</h1>
+        <p style="font-size: 20px;">Access exam papers for your study needs!</p>
        <p class="made-by">Made by - Shrey and Preyansh</p>
     </header>
     <nav class="navbar">
         <div class="nav-logo">
-            <a href="index.html"><img src="logo.jpg" alt="" class="logo-img"></a>
+            <a href="index.html"><img src="Images/logo-no-background.png" alt="" class="logo-img"></a>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Materials</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Material 1</a></li>
-                    <li><a href="#">Material 2</a></li>
-                    <li><a href="#">Material 3</a></li>
-                </ul>
+            <li class="">
+                <a href="#" class="">Materials</a>
             </li>
             <li><a href="#">About us</a></li>
-            <li><a href="#">Email: peyupatel1239@gmail.com</a></li>
+            <li><a href="#">Email: peyupatel1239@gmail.com / shreyamin2109@gmail.com </a></li>
         </ul>
     </nav>
     <main>
